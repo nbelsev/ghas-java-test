@@ -19,7 +19,8 @@ public class XXEController {
 						  @RequestParam(name = "xsd", required = false) String xsdPath) {
 		String out;
 		
-		if(XXEDemo.validateXml(xmlPath, xsdPath)) {
+		//if(XXEDemo.validateXml(xmlPath, xsdPath)) {
+		if(XXEDemo.secureValidateXmlOWASP(xmlPath, xsdPath)) {
 			out = "Validation result: success!";
 		} else {
 			out = "Validation result: failed.";
