@@ -16,7 +16,7 @@ public class XXEController {
 	@GetMapping("/")
 	@ResponseBody
 	public String testXml(@RequestParam(name = "xml", required = false) String xmlPath,
-							   @RequestParam(name = "xsd", required = false) String xsdPath) {
+						  @RequestParam(name = "xsd", required = false) String xsdPath) {
 		String out;
 		
 		if(XXEDemo.validateXml(xmlPath, xsdPath)) {
