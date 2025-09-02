@@ -20,7 +20,8 @@ public class XXEController {
 		String out;
 		
 		//if(XXEDemo.validateXml(xmlPath, xsdPath)) {
-		if(XXEDemo.secureValidateXmlOWASP(xmlPath, xsdPath)) {
+		//if(XXEDemo.secureValidateXmlOWASP(xmlPath, xsdPath)) {
+		if(XXEDemo.secureValidateXml(xmlPath, xsdPath)) {
 			out = "Validation result: success!";
 		} else {
 			out = "Validation result: failed.";
