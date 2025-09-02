@@ -143,6 +143,15 @@ public class XXEDemo {
 	 * Test validation mechanisms.
 	 */
 	public static void main(String[] args) throws Exception {
+		String xsdPath = "";
+		String xmlPath = "";
+		
+		//Get XSD/XML paths from command line
+		if(args.length == 3) {
+			xsdPath = args[1];
+			xmlPath = args[2];
+		}
+		
 		//Setup
 //		securedParserFactory = createSecuredParserFactory();
 		
