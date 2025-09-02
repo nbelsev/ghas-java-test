@@ -19,8 +19,7 @@ public class XXEController {
 						  @RequestParam(name = "xsd", required = false) String xsdPath) {
 		String out;
 		
-		//if(XXEDemo.validateXml(xmlPath, xsdPath)) {
-		if(xmlPath == xsdPath) { //Placeholder, checking if GHAS considers command-line args to be dangerous source.
+		if(XXEDemo.validateXml(xmlPath, xsdPath)) {
 			out = "Validation result: success!";
 		} else {
 			out = "Validation result: failed.";
