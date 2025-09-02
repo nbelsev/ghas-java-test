@@ -160,9 +160,9 @@ public class XXEDemo {
 		
 		//Parse and validate XML docs
 //		System.out.println("OWASP validation result 1: " + secureValidateXmlOWASP(xsdPath, xmlPath));
-//		System.out.println("Secure validation result 1: " + secureValidateXml("GoodSchema.xsd", "GoodXml.xml"));
-		System.out.println("Validation result 1: " + validateXml("GoodSchema.xsd", "GoodXml.xml"));
-		loadAndPrintXml("GoodXml.xml");
+//		System.out.println("Secure validation result 1: " + secureValidateXml(xsdPath, xmlPath));
+		System.out.println("Validation result 1: " + validateXml(xsdPath, xmlPath));
+		loadAndPrintXml(xmlPath);
 		
 //		System.out.println("OWASP validation result 1: " + secureValidateXmlOWASP("GoodSchema.xsd", "GoodXml.xml"));
 //		System.out.println("Secure validation result 1: " + secureValidateXml("GoodSchema.xsd", "GoodXml.xml"));
