@@ -86,6 +86,7 @@ public class XXEDemo {
 		reader.setFeature(EXTERNAL_GENERAL_ENTITIES, false);
 		reader.setFeature(EXTERNAL_PARAMETER_ENTITIES, false);
 		reader.setFeature(FEATURE_SECURE_PROCESSING, true);
+		reader.setFeature("http://apache.org/xml/features/nonvalidating/load-external-dtd", false);
 		return reader;
 	}
 	
